@@ -1,8 +1,8 @@
 // if(process.env.NODE_ENV !== "product"){
 //    const dotenv = require("dotenv")
 // }
-const dotenv  = require("dotenv");
- dotenv.config();
+// const dotenv  = require("dotenv");
+//  dotenv.config();
 
 const express = require("express")
 const app = express();
