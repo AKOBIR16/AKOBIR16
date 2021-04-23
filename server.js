@@ -11,12 +11,13 @@ const authorsRoute = require("./router/author");
 const booksRoute = require("./router/books")
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser")
-
+const methodOverride = require("method-override")
 
 app.set("view engine", "ejs")
 app.set("views", __dirname + "/views");
 app.set("layout","layouts/layout");
 app.use(expresslayouts);
+app.use(methodOverride('_method'));
 app.use(express.static("public"));
 app.use("/",expressRouter);
 app.use(bodyParser.urlencoded({limit:"50mb",extended:false}))
