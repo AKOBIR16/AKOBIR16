@@ -1,0 +1,6 @@
+<h2 class="page-header">Edit Author</h2>
+<form action="/authors/<%= author.id %>/?_method=PUT"  method="POST">
+      <%- include("_form_fields") %>
+      <a href="/authors">Cancel</a>
+      <button type="submit">Upload</button>
+</form>
